@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+cython = "*"
+autograd = "*"
+
+[packages]
+gym = "*"
+numpy = "*"
+scipy = "*"
+vpython = "*"
+gym-brt = {path = ".", editable = true}
