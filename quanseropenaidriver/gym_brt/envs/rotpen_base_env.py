@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Feb  7 03:23:56 2021
-
-@author: Deniz
-"""
-
 from __future__ import absolute_import
 from __future__ import print_function
 from __future__ import division

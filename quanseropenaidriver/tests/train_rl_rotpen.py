@@ -2,7 +2,7 @@
 
 import numpy as np
 import gym
-from gym_brt.envs import RotpenSwingupEnv,RotpenSwingupSparseEnv
+from gym_brt.envs import QubeSwingupEnv
 from stable_baselines3 import PPO, A2C
 import time
 from stable_baselines3.common.vec_env import DummyVecEnv, SubprocVecEnv
@@ -35,7 +35,7 @@ def make_env(rank: int, seed: int = 0) -> Callable:
 
 if __name__ == '__main__':
 
-    num_cpu = 11  # Number of processes to use
+    num_cpu = 4  # Number of processes to use
     # Create the vectorized environment
     envs = SubprocVecEnv([make_env(i) for i in range(num_cpu)])
 
